@@ -1,0 +1,52 @@
+<!-- Programming Club Day 2: CSS, adding some sauce -->
+
+<html>
+<head>
+	<title>Programming Club</title>
+
+	<!-- 
+		Use <style> for CSS code.
+		Three different ways we can reference items from HTML:
+			1. By element type. h1, body, and p are all being referenced by their type
+			2. By ID (only one object per ID). Assign an ID in HTML and reference it in CSS using #IDName
+			3. By Class (multiple objects can have the same class). Assign a class in HTML and reference it using .ClassName
+	-->
+
+	<style>
+		h1{
+			/*Colors are basic color name or hex key (search for hex color picker online)*/
+			color: #b3247e;
+		}
+		body{
+			background-color: teal;
+			font-family: Arial;
+			/*
+			Margin: all objects have 50 px of space to the left. 
+			Margins can either be in number of pixels (ex. 50px) or percent of window width (ex. 75%)
+			*/
+			margin-left: 50px;
+			/*centers everything*/
+			text-align: center;
+		}
+
+		p{
+			font-size: 20px;
+			font-weight: bold;
+		}
+		#point1{
+			color: red;
+		}
+		.otherpoints{
+			color:yellow;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Why Tag should show up to Programming Club</h1>
+
+	<p id="point1">Tag should show up because he would learn a lot, and ishan is hot.</p>
+	<p class="otherpoints">Nathan has funny jokes</p>
+	<p class="otherpoints">Dominic would give him a high five</p>
+</body>
+</html>
